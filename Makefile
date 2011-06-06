@@ -1,10 +1,10 @@
 SRCs=$(wildcard tests/*.as)
 SWFs=$(SRCs:.as=.swf)
 
-compile: flexsdk clean $(SWFs)
+compile: flexsdk $(SWFs)
 
 %.swf: %.as
-	@ echo "- $@" && \
+	@ echo "- $<" && \
 		$(MXMLC) -output=$@ \
 		-library-path+=$(SDK)/frameworks \
 		-define=CONFIG::Debug,false -define+=CONFIG::Release,true -debug=false \

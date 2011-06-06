@@ -1,7 +1,7 @@
 /*  
 
-generally observed results:
-  Function, Time
+  Observed results:
+    Description, Time
     boolean, 61
     boolean == , 61
     boolean === , 60
@@ -18,8 +18,8 @@ generally observed results:
     object == , 312
     object === , 237
 
-seems its is better to use if(variable) except when the variable is a Number and testing for Number == 0 
-iffalse uses one less instruction and seems to run at almost the same speed 
+  seems its is better to use if(variable) except when the variable is a Number and testing for Number == 0 
+  iffalse uses one less instruction and seems to run at almost the same speed 
 
 */
 
@@ -32,7 +32,7 @@ package
   {
     override public function test():void
     {
-      log("Function, Time");
+      log("Description, Time");
       
       var beforeTime:int;
       var afterTime:int;
